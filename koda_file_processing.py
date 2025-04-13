@@ -4,18 +4,22 @@ from datetime import datetime
 import pytz
 import os
 
-
+## Function to generate static data
 def generate_static_data(static_path, in_relevant_lines):
     # Read static files
-    trips_df = pd.read_csv(static_path + "trips.txt")
-    routes_df = pd.read_csv(static_path + "routes.txt")
-    stops_df = pd.read_csv(static_path + "stops.txt")
-    stop_times_df = pd.read_csv(static_path + "stop_times.txt")
+    trips_df = pd.read_csv(static_path + "/trips.txt")
+    routes_df = pd.read_csv(static_path + "/routes.txt")
+    stops_df = pd.read_csv(static_path + "/stops.txt")
+    stop_times_df = pd.read_csv(static_path + "/stop_times.txt")
 
     trips_df['trip_id'] = trips_df['trip_id'].astype(str)
     trips_df['route_id'] = trips_df['route_id'].astype(str)
     routes_df['route_id'] = routes_df['route_id'].astype(str)
     stops_df['stop_id'] = stops_df['stop_id'].astype(str)
+    stops_df['parent_station'] = stops_df['parent_station'].astype(str)
+    stops_df['platform_code'] = stops_df['platform_code'].astype(str)
+
+
     stop_times_df['stop_id'] = stop_times_df['stop_id'].astype(str)
     stop_times_df['trip_id'] = stop_times_df['trip_id'].astype(str)
 
@@ -24,12 +28,13 @@ def generate_static_data(static_path, in_relevant_lines):
 
     merged_step_1_df = pd.merge(trips_routes_merged_df, stop_times_df)
 
-    return pd.merge(merged_step_1_df, stops_df)[
-        ['route_short_name', 'stop_name', 'arrival_time', 'departure_time', 'stop_headsign',
-         'stop_sequence', 'trip_id', 'stop_id', 'service_id']]
+    #return pd.merge(merged_step_1_df, stops_df)[
+    #    ['route_short_name', 'stop_name', 'arrival_time', 'departure_time', 'stop_headsign',
+    #     'stop_sequence', 'trip_id', 'stop_id', 'service_id','shape_dist_traveled']]
+    return pd.merge(merged_step_1_df, stops_df)
 
-
-def process_real_time_file(file_path, file_name,in_static_df):
+## Processing of a single .pb file
+def process_real_time_file(file_path, file_name,in_static_df = None,merge_static = True):
     rows = []
     feed = gtfs_realtime_pb2.FeedMessage()
 
@@ -74,12 +79,16 @@ def process_real_time_file(file_path, file_name,in_static_df):
                     "departure_delay": departure_delay
                 })
     temp_rt_df = pd.DataFrame(rows)
-    df =  pd.merge(temp_rt_df, in_static_df, on=['trip_id', 'stop_id'], suffixes=('_real', '_sched'))
-    df['file'] = file_name
 
+    if merge_static:
+        df =  pd.merge(temp_rt_df, in_static_df, on=['trip_id', 'stop_id'], suffixes=('_real', '_sched'))
+    else:
+        df = temp_rt_df
+
+    df['file'] = file_name
     return df
 
-
+## Read a directory of .pb files contained in 1h
 def read_pb_hour(in_pb_path,in_static_path,in_relevant_lines):
     full_df = pd.DataFrame()
 
@@ -91,11 +100,16 @@ def read_pb_hour(in_pb_path,in_static_path,in_relevant_lines):
 
     return full_df
 
-
+## Read each of the hours within a day of real time data
 def read_pb_day(in_day_path,in_static_path,in_relevant_lines):
+    year = in_day_path[20:24]
+    month = in_day_path[25:27]
+    day = in_day_path[28:30]
+
+    final_day_path = in_day_path + '/sl/TripUpdates/' + year + '/' + month + '/' + day
     full_df = pd.DataFrame()
-    for hour_path in os.listdir(in_day_path):
-        new_df = read_pb_hour(in_day_path + '/' + hour_path,in_static_path, in_relevant_lines)
+    for hour_path in os.listdir(final_day_path):
+        new_df = read_pb_hour(final_day_path + '/' + hour_path,in_static_path, in_relevant_lines)
         full_df = pd.concat([full_df, new_df])
         print(hour_path)
 
