@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e61cd79b-c976-469d-b041-b7d48811a098" name="Changes" comment="Added full pipeline to download data from Koda">
+    <list default="true" id="e61cd79b-c976-469d-b041-b7d48811a098" name="Changes" comment="Added speed, travel time and distance attributes for first week files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boxplot (2).ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/boxplot (2).ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_acquisition.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_acquisition.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test.ipynb" afterDir="false" />
@@ -93,7 +94,12 @@
       <workItem from="1744614102440" duration="1038000" />
       <workItem from="1744621530428" duration="1186000" />
       <workItem from="1744746115493" duration="3602000" />
-      <workItem from="1744757230268" duration="3414000" />
+      <workItem from="1744757230268" duration="3983000" />
+      <workItem from="1744844492802" duration="1100000" />
+      <workItem from="1745333370135" duration="5049000" />
+      <workItem from="1745490243301" duration="5964000" />
+      <workItem from="1745503935960" duration="690000" />
+      <workItem from="1745915890262" duration="12796000" />
     </task>
     <task id="LOCAL-00001" summary="Project Start">
       <option name="closed" value="true" />
@@ -127,20 +133,40 @@
       <option name="project" value="LOCAL" />
       <updated>1744557693331</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added speed, travel time and distance attributes for first week files">
+      <option name="closed" value="true" />
+      <created>1744833421563</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744833421563</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Start" />
     <MESSAGE value="Added full pipeline to download data from Koda" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added full pipeline to download data from Koda" />
+    <MESSAGE value="Added speed, travel time and distance attributes for first week files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added speed, travel time and distance attributes for first week files" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PT_Project$koda_file_processing.coverage" NAME="koda_file_processing Coverage Results" MODIFIED="1744539197392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PT_Project$file_processing.coverage" NAME="file_processing Coverage Results" MODIFIED="1744121885601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PT_Project$main.coverage" NAME="main Coverage Results" MODIFIED="1744829184067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PT_Project$main.coverage" NAME="main Coverage Results" MODIFIED="1745490520366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
