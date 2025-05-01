@@ -3,6 +3,7 @@
 #from api_connection import *
 
 import pandas as pd
+import os
 
 ## Global function to manage the download of 1 day of static and real time data,
 ## processing all the .pb files and returning a csv with the collected data
@@ -24,9 +25,12 @@ def merge_day_files(files, output_file_name):
 
     concat_df.to_csv(output_file_name,index=False)
 
-def my_read_df(input_path):
+def my_read_df(input_path, return_dict = False):
     df = pd.read_csv(input_path)
     processed_df = add_df_features(df)
+    if return_dict:
+        dict_df = processed_df_to_dict(processed_df)
+        return dict_df
     return processed_df
 
 def add_df_features(input_df):
@@ -83,8 +87,11 @@ def add_df_features(input_df):
     regular_trips_df = ordered_df[~ordered_df['trip_id'].isin(list_trip_id)]
     df_clean = pd.concat([df_annoying, regular_trips_df])
 
+    row_df = merge_row_files()
 
-    return df_clean
+    merged_df = pd.merge(df_clean, row_df)
+
+    return merged_df
 
 
 
@@ -100,3 +107,18 @@ def hospital_trips(df):
         df['stop_headsign'].isin(['Sickla udde via Södersjukhuset', 'Hornsberg via Södersjukhuset']))]['trip_id']))
 
 
+def processed_df_to_dict(input_df):
+    input_df['stop_line_headsign'] = input_df['route_short_name'].astype(str) + '_' + input_df['stop_headsign']
+    df_dict = dict.fromkeys(input_df['stop_line_headsign'].unique())
+    for destination in df_dict.keys():
+        df_dict[destination] = input_df[input_df['stop_line_headsign'] == destination]
+    return df_dict
+
+def merge_row_files(row_path = 'data/row'):
+    concat_df = pd.DataFrame()
+    for file in os.listdir(row_path):
+        df = pd.read_csv(row_path + '/' + file, sep = ';')
+        df['percentage_row'] = df['percentage_row'].apply(
+            lambda x: '1' if x == '1,000,000,000,000,000' else x).str.replace(',', '.').astype(float)
+        concat_df = pd.concat([concat_df, df], ignore_index = True)
+    return concat_df
