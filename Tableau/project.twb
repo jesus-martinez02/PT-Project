@@ -1,0 +1,1865 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0415.1018                               -->
+<workbook original-version='18.1' source-build='2025.1.1 (20251.25.0415.1018)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (tableau_data)' inline='true' name='federated.160n9371xk22o913yen7k0l9su4f' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_data' name='excel-direct.1ihr3wa0phhnw113umz121b2ols3'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/PyCharm/Projects/PT-Project/Tableau/tableau_data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1ihr3wa0phhnw113umz121b2ols3' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:W10001:no:A1:W2147483647:0' header='yes' outcome='2'>
+            <column datatype='integer' name='trip_id' ordinal='0' />
+            <column datatype='integer' name='stop_id' ordinal='1' />
+            <column datatype='integer' name='route_short_name' ordinal='2' />
+            <column datatype='string' name='stop_name' ordinal='3' />
+            <column datatype='string' name='stop_headsign' ordinal='4' />
+            <column datatype='integer' name='stop_sequence_real' ordinal='5' />
+            <column datatype='datetime' name='arrival_time_real' ordinal='6' />
+            <column datatype='datetime' name='departure_time_real' ordinal='7' />
+            <column datatype='integer' name='arrival_delay' ordinal='8' />
+            <column datatype='integer' name='departure_delay' ordinal='9' />
+            <column datatype='string' name='departure_time_sched' ordinal='10' />
+            <column datatype='datetime' name='arrival_time_sched' ordinal='11' />
+            <column datatype='integer' name='service_id' ordinal='12' />
+            <column datatype='integer' name='start_date' ordinal='13' />
+            <column datatype='real' name='shape_dist_traveled' ordinal='14' />
+            <column datatype='real' name='stop_lat' ordinal='15' />
+            <column datatype='real' name='stop_lon' ordinal='16' />
+            <column datatype='real' name='distance_between_stops' ordinal='17' />
+            <column datatype='datetime' name='prev_departure_real' ordinal='18' />
+            <column datatype='integer' name='travel_time' ordinal='19' />
+            <column datatype='real' name='speed' ordinal='20' />
+            <column datatype='string' name='dwell_time' ordinal='21' />
+            <column datatype='real' name='percentage_row' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>6</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:W10001:no:A1:W2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[trip_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>trip_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stop_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stop_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>stop_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>route_short_name</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[route_short_name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>route_short_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stop_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[stop_name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>stop_name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stop_headsign</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[stop_headsign]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>stop_headsign</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stop_sequence_real</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stop_sequence_real]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>stop_sequence_real</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_time_real</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[arrival_time_real]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>arrival_time_real</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>departure_time_real</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[departure_time_real]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>departure_time_real</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_delay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrival_delay]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>arrival_delay</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>departure_delay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[departure_delay]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>departure_delay</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>departure_time_sched</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[departure_time_sched]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>departure_time_sched</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_time_sched</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[arrival_time_sched]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>arrival_time_sched</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>service_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[service_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>service_id</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_date</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[start_date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>start_date</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shape_dist_traveled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[shape_dist_traveled]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>shape_dist_traveled</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stop_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stop_lat]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>stop_lat</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stop_lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stop_lon]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>stop_lon</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance_between_stops</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[distance_between_stops]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>distance_between_stops</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prev_departure_real</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[prev_departure_real]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>prev_departure_real</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>travel_time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[travel_time]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>travel_time</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>speed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[speed]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>speed</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dwell_time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[dwell_time]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>dwell_time</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage_row</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percentage_row]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>percentage_row</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' caption='Departure Hour' datatype='integer' name='[Calculation_1101974539382509570]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IFNULL(INT(LEFT([departure_time_sched],2)), &#13;&#10;        INT(LEFT([departure_time_sched],1)))' />
+      </column>
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]' role='measure' type='quantitative' />
+      <column caption='Arrival Delay' datatype='integer' name='[arrival_delay]' role='measure' type='quantitative' />
+      <column caption='Arrival Time Real' datatype='datetime' name='[arrival_time_real]' role='dimension' type='ordinal' />
+      <column caption='Arrival Time Sched' datatype='datetime' name='[arrival_time_sched]' role='dimension' type='ordinal' />
+      <column caption='Departure Delay' datatype='integer' name='[departure_delay]' role='measure' type='quantitative' />
+      <column caption='Departure Time Real' datatype='datetime' name='[departure_time_real]' role='dimension' type='ordinal' />
+      <column caption='Departure Time Sched' datatype='string' name='[departure_time_sched]' role='dimension' type='nominal' />
+      <column caption='Distance Between Stops' datatype='real' name='[distance_between_stops]' role='measure' type='quantitative' />
+      <column caption='Prev Departure Real' datatype='datetime' name='[prev_departure_real]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Route Short Name' datatype='integer' name='[route_short_name]' role='dimension' type='ordinal' />
+      <column caption='Service Id' datatype='integer' name='[service_id]' role='dimension' type='ordinal' />
+      <column caption='Shape Dist Traveled' datatype='real' name='[shape_dist_traveled]' role='measure' type='quantitative' />
+      <column caption='Speed' datatype='real' name='[speed]' role='measure' type='quantitative' />
+      <column caption='Start Date' datatype='integer' name='[start_date]' role='measure' type='quantitative' />
+      <column caption='Stop Headsign' datatype='string' name='[stop_headsign]' role='dimension' type='nominal' />
+      <column caption='Stop Id' datatype='integer' name='[stop_id]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' name='[stop_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[stop_lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Stop Name' datatype='string' name='[stop_name]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Stop Sequence Real' datatype='integer' name='[stop_sequence_real]' role='dimension' type='ordinal' />
+      <column caption='Travel Time' datatype='integer' name='[travel_time]' role='measure' type='quantitative' />
+      <column caption='Trip Id' datatype='integer' name='[trip_id]' role='dimension' type='ordinal' />
+      <column-instance column='[stop_name]' derivation='None' name='[none:stop_name:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/jemaa/AppData/Local/Temp/TableauTemp/#TableauTemp_0su5gtk19ns34116nytx118ghstz.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/02/2025 12:29:06 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>trip_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[trip_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>643</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stop_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stop_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stop_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>76</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>route_short_name</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[route_short_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>route_short_name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stop_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stop_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stop_name</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>73</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stop_headsign</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stop_headsign]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stop_headsign</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stop_sequence_real</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stop_sequence_real]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stop_sequence_real</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>arrival_time_real</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[arrival_time_real]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>arrival_time_real</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>66229</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>departure_time_real</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[departure_time_real]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>departure_time_real</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>62857</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>arrival_delay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[arrival_delay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>arrival_delay</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1960</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>departure_delay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[departure_delay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>departure_delay</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1812</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>departure_time_sched</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[departure_time_sched]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>departure_time_sched</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14448</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>arrival_time_sched</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[arrival_time_sched]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>arrival_time_sched</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>14448</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>service_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[service_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>service_id</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_date</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[start_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start_date</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shape_dist_traveled</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[shape_dist_traveled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shape_dist_traveled</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>204</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stop_lat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[stop_lat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stop_lat</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>135</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stop_lon</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[stop_lon]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stop_lon</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>135</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distance_between_stops</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[distance_between_stops]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>distance_between_stops</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>163</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>prev_departure_real</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[prev_departure_real]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>prev_departure_real</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Sheet1</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>62717</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>travel_time</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[travel_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>travel_time</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>745</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>speed</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[speed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>speed</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13249</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dwell_time</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dwell_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dwell_time</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>557</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percentage_row</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percentage_row]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percentage_row</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7B18A24AF06E4E22819C256E0183CD0A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:stop_name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Mälartorget&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mariebergsgatan&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nordenflychtsvägen&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ansgariegatan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Centralen&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Fleminggatan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Vikingagatan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Henriksdalsberget&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Hornsgatan/Rosenlundsgatan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;John Ericssonsgatan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Kristineberg&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Odenplan&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Pontonjärgatan&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sickla kaj&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mårtensdal&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Norra Bantorget&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Valhallavägen&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Henriksdalsviadukten&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Hornstull&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Karolinska institutet västra&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Landstingshuset&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lignagatan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Viktor Rydbergs gata&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Tegnérgatan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Vasaparken&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Wollmar Yxkullsgatan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Bohusgatan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Danvikstull&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Fredhäll&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ruddammen&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Slussen&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Varvsgatan&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Kornhamnstorg&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Lindhagensgatan&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Marieberg&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Vitalisvägen&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Odengatan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pontonjärparken&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Riddarhustorget&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sickla udde&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Skanstull&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Rådhuset&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;S:t Eriksgatan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Södra station&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ruddammsparken&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Tegelbacken&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Västerbroplan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Stadsbiblioteket&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Tjärhovsplan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Zinkensdamm&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Moa Martinsons torg&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Norra Stationsgatan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Olof Dalins väg&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Kungsholmstorg&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Londonviadukten&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Luma&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Stickelbärsvägen&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Wennerbergsgatan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Eriksdal&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ersta sjukhus&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Folkungagatan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Fridhemsplan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Roslagsgatan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sabbatsbergs sjukhus&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Strandbergsgatan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Observatoriegatan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Pilgatan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Rosenlund&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Rosenlundsgatan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Frödingsvägen&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Hälsingegatan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Högalidsgatan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Körsbärsvägen&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Spain&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='trip_id' />
+        <field-sort-custom-order field='stop_id' />
+        <field-sort-custom-order field='route_short_name' />
+        <field-sort-custom-order field='stop_name' />
+        <field-sort-custom-order field='stop_headsign' />
+        <field-sort-custom-order field='stop_sequence_real' />
+        <field-sort-custom-order field='arrival_time_real' />
+        <field-sort-custom-order field='departure_time_real' />
+        <field-sort-custom-order field='arrival_delay' />
+        <field-sort-custom-order field='departure_delay' />
+        <field-sort-custom-order field='departure_time_sched' />
+        <field-sort-custom-order field='Calculation_1101974539382509570' />
+        <field-sort-custom-order field='Calculation_1101974539381903361' />
+        <field-sort-custom-order field='arrival_time_sched' />
+        <field-sort-custom-order field='service_id' />
+        <field-sort-custom-order field='start_date' />
+        <field-sort-custom-order field='shape_dist_traveled' />
+        <field-sort-custom-order field='stop_lat' />
+        <field-sort-custom-order field='stop_lon' />
+        <field-sort-custom-order field='distance_between_stops' />
+        <field-sort-custom-order field='prev_departure_real' />
+        <field-sort-custom-order field='travel_time' />
+        <field-sort-custom-order field='speed' />
+        <field-sort-custom-order field='dwell_time' />
+        <field-sort-custom-order field='percentage_row' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_7B18A24AF06E4E22819C256E0183CD0A'>
+            <properties context=''>
+              <relation connection='excel-direct.1ihr3wa0phhnw113umz121b2ols3' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:W10001:no:A1:W2147483647:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='trip_id' ordinal='0' />
+                  <column datatype='integer' name='stop_id' ordinal='1' />
+                  <column datatype='integer' name='route_short_name' ordinal='2' />
+                  <column datatype='string' name='stop_name' ordinal='3' />
+                  <column datatype='string' name='stop_headsign' ordinal='4' />
+                  <column datatype='integer' name='stop_sequence_real' ordinal='5' />
+                  <column datatype='datetime' name='arrival_time_real' ordinal='6' />
+                  <column datatype='datetime' name='departure_time_real' ordinal='7' />
+                  <column datatype='integer' name='arrival_delay' ordinal='8' />
+                  <column datatype='integer' name='departure_delay' ordinal='9' />
+                  <column datatype='string' name='departure_time_sched' ordinal='10' />
+                  <column datatype='datetime' name='arrival_time_sched' ordinal='11' />
+                  <column datatype='integer' name='service_id' ordinal='12' />
+                  <column datatype='integer' name='start_date' ordinal='13' />
+                  <column datatype='real' name='shape_dist_traveled' ordinal='14' />
+                  <column datatype='real' name='stop_lat' ordinal='15' />
+                  <column datatype='real' name='stop_lon' ordinal='16' />
+                  <column datatype='real' name='distance_between_stops' ordinal='17' />
+                  <column datatype='datetime' name='prev_departure_real' ordinal='18' />
+                  <column datatype='integer' name='travel_time' ordinal='19' />
+                  <column datatype='real' name='speed' ordinal='20' />
+                  <column datatype='string' name='dwell_time' ordinal='21' />
+                  <column datatype='real' name='percentage_row' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='ROW vs Speed'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (tableau_data)' name='federated.160n9371xk22o913yen7k0l9su4f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.160n9371xk22o913yen7k0l9su4f'>
+            <column aggregation='Sum' caption='Departure Hour' datatype='integer' name='[Calculation_1101974539382509570]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='IFNULL(INT(LEFT([departure_time_sched],2)), &#13;&#10;        INT(LEFT([departure_time_sched],1)))' />
+            </column>
+            <column-instance column='[stop_sequence_real]' derivation='Attribute' name='[attr:stop_sequence_real:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[speed]' derivation='Avg' name='[avg:speed:qk]' pivot='key' type='quantitative' />
+            <column caption='Departure Time Sched' datatype='string' name='[departure_time_sched]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1101974539382509570]' derivation='None' name='[none:Calculation_1101974539382509570:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[percentage_row]' derivation='None' name='[none:percentage_row:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[route_short_name]' derivation='None' name='[none:route_short_name:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[stop_headsign]' derivation='None' name='[none:stop_headsign:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stop_name]' derivation='None' name='[none:stop_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stop_sequence_real]' derivation='None' name='[none:stop_sequence_real:ok]' pivot='key' type='ordinal' />
+            <column datatype='real' name='[percentage_row]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Route Short Name' datatype='integer' name='[route_short_name]' role='dimension' type='ordinal' />
+            <column caption='Speed' datatype='real' name='[speed]' role='measure' type='quantitative' />
+            <column caption='Stop Headsign' datatype='string' name='[stop_headsign]' role='dimension' type='nominal' />
+            <column caption='Stop Name' datatype='string' name='[stop_name]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Stop Sequence Real' datatype='integer' name='[stop_sequence_real]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.160n9371xk22o913yen7k0l9su4f].[none:Calculation_1101974539382509570:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_1101974539382509570:ok]' member='7' />
+              <groupfilter function='member' level='[none:Calculation_1101974539382509570:ok]' member='8' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.160n9371xk22o913yen7k0l9su4f].[none:route_short_name:ok]'>
+            <groupfilter function='member' level='[none:route_short_name:ok]' member='53' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_sequence_real:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='2' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='3' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='4' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='5' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='6' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='7' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='8' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='9' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='10' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='11' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='12' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='13' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='14' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='15' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='16' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='17' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='18' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='19' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='20' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='21' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='22' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='23' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='24' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='25' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='26' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='27' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='28' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='29' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_sequence_real:ok]</column>
+            <column>[federated.160n9371xk22o913yen7k0l9su4f].[none:route_short_name:ok]</column>
+            <column>[federated.160n9371xk22o913yen7k0l9su4f].[none:Calculation_1101974539382509570:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_name:nk]' />
+              <tooltip column='[federated.160n9371xk22o913yen7k0l9su4f].[attr:stop_sequence_real:qk]' />
+              <lod column='[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_headsign:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.160n9371xk22o913yen7k0l9su4f].[avg:speed:qk]</rows>
+        <cols>([federated.160n9371xk22o913yen7k0l9su4f].[none:stop_headsign:nk] * [federated.160n9371xk22o913yen7k0l9su4f].[none:percentage_row:qk])</cols>
+      </table>
+      <simple-id uuid='{7F129FC8-357F-47F0-B0C6-809712AA500F}' />
+    </worksheet>
+    <worksheet name='ROW vs Speed (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (tableau_data)' name='federated.160n9371xk22o913yen7k0l9su4f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.160n9371xk22o913yen7k0l9su4f'>
+            <column aggregation='Sum' caption='Departure Hour' datatype='integer' name='[Calculation_1101974539382509570]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='IFNULL(INT(LEFT([departure_time_sched],2)), &#13;&#10;        INT(LEFT([departure_time_sched],1)))' />
+            </column>
+            <column-instance column='[stop_sequence_real]' derivation='Attribute' name='[attr:stop_sequence_real:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[speed]' derivation='Avg' name='[avg:speed:qk]' pivot='key' type='quantitative' />
+            <column caption='Departure Time Sched' datatype='string' name='[departure_time_sched]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1101974539382509570]' derivation='None' name='[none:Calculation_1101974539382509570:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[percentage_row]' derivation='None' name='[none:percentage_row:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[route_short_name]' derivation='None' name='[none:route_short_name:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[stop_headsign]' derivation='None' name='[none:stop_headsign:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stop_name]' derivation='None' name='[none:stop_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stop_sequence_real]' derivation='None' name='[none:stop_sequence_real:ok]' pivot='key' type='ordinal' />
+            <column datatype='real' name='[percentage_row]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Route Short Name' datatype='integer' name='[route_short_name]' role='dimension' type='ordinal' />
+            <column caption='Speed' datatype='real' name='[speed]' role='measure' type='quantitative' />
+            <column caption='Stop Headsign' datatype='string' name='[stop_headsign]' role='dimension' type='nominal' />
+            <column caption='Stop Name' datatype='string' name='[stop_name]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Stop Sequence Real' datatype='integer' name='[stop_sequence_real]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.160n9371xk22o913yen7k0l9su4f].[none:Calculation_1101974539382509570:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_1101974539382509570:ok]' member='7' />
+              <groupfilter function='member' level='[none:Calculation_1101974539382509570:ok]' member='8' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.160n9371xk22o913yen7k0l9su4f].[none:route_short_name:ok]'>
+            <groupfilter function='member' level='[none:route_short_name:ok]' member='74' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_sequence_real:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='2' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='3' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='4' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='5' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='6' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='7' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='8' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='9' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='10' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='11' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='12' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='13' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='14' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='15' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='16' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='17' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='18' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='19' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='20' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='21' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='22' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='23' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='24' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='25' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='26' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='27' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='28' />
+              <groupfilter function='member' level='[none:stop_sequence_real:ok]' member='29' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_sequence_real:ok]</column>
+            <column>[federated.160n9371xk22o913yen7k0l9su4f].[none:route_short_name:ok]</column>
+            <column>[federated.160n9371xk22o913yen7k0l9su4f].[none:Calculation_1101974539382509570:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_name:nk]' />
+              <tooltip column='[federated.160n9371xk22o913yen7k0l9su4f].[attr:stop_sequence_real:qk]' />
+              <lod column='[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_headsign:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.160n9371xk22o913yen7k0l9su4f].[avg:speed:qk]</rows>
+        <cols>([federated.160n9371xk22o913yen7k0l9su4f].[none:stop_headsign:nk] * [federated.160n9371xk22o913yen7k0l9su4f].[none:percentage_row:qk])</cols>
+      </table>
+      <simple-id uuid='{11FA50DD-77A4-4315-8A53-540123A914F4}' />
+    </worksheet>
+    <worksheet name='Speed Variation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (tableau_data)' name='federated.160n9371xk22o913yen7k0l9su4f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.160n9371xk22o913yen7k0l9su4f'>
+            <column-instance column='[speed]' derivation='Avg' name='[avg:speed:qk]' pivot='key' type='quantitative' />
+            <column caption='Departure Time Real' datatype='datetime' name='[departure_time_real]' role='dimension' type='ordinal' />
+            <column-instance column='[departure_time_real]' derivation='Hour' name='[hr:departure_time_real:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[route_short_name]' derivation='None' name='[none:route_short_name:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[stop_headsign]' derivation='None' name='[none:stop_headsign:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stop_name]' derivation='None' name='[none:stop_name:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Route Short Name' datatype='integer' name='[route_short_name]' role='dimension' type='ordinal' />
+            <column caption='Speed' datatype='real' name='[speed]' role='measure' type='quantitative' />
+            <column caption='Stop Headsign' datatype='string' name='[stop_headsign]' role='dimension' type='nominal' />
+            <column caption='Stop Name' datatype='string' name='[stop_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.160n9371xk22o913yen7k0l9su4f].[none:route_short_name:ok]'>
+            <groupfilter function='member' level='[none:route_short_name:ok]' member='53' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_headsign:nk]'>
+            <groupfilter function='member' level='[none:stop_headsign:nk]' member='&quot;Henriksdalsberget&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_name:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:stop_name:nk]' member='&quot;Hälsingegatan&quot;' />
+              <groupfilter function='member' level='[none:stop_name:nk]' member='&quot;Odenplan&quot;' />
+              <groupfilter function='member' level='[none:stop_name:nk]' member='&quot;S:t Eriksgatan&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.160n9371xk22o913yen7k0l9su4f].[none:route_short_name:ok]</column>
+            <column>[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_headsign:nk]</column>
+            <column>[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.160n9371xk22o913yen7k0l9su4f].[avg:speed:qk]</rows>
+        <cols>[federated.160n9371xk22o913yen7k0l9su4f].[hr:departure_time_real:qk]</cols>
+      </table>
+      <simple-id uuid='{76C68E0E-0C90-411C-9EDC-5B1712AA5D6A}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='ROW vs Speed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.160n9371xk22o913yen7k0l9su4f].[none:Calculation_1101974539382509570:ok]' type='filter' />
+            <card param='[federated.160n9371xk22o913yen7k0l9su4f].[none:route_short_name:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.160n9371xk22o913yen7k0l9su4f].[none:percentage_row:qk]</field>
+            <field>[federated.160n9371xk22o913yen7k0l9su4f].[none:route_short_name:ok]</field>
+            <field>[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_headsign:nk]</field>
+            <field>[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{19A19EFF-3686-4784-A7E0-8135EBCA9D73}' />
+    </window>
+    <window class='worksheet' name='ROW vs Speed (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.160n9371xk22o913yen7k0l9su4f].[none:Calculation_1101974539382509570:ok]' type='filter' />
+            <card param='[federated.160n9371xk22o913yen7k0l9su4f].[none:route_short_name:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.160n9371xk22o913yen7k0l9su4f].[none:percentage_row:qk]</field>
+            <field>[federated.160n9371xk22o913yen7k0l9su4f].[none:route_short_name:ok]</field>
+            <field>[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_headsign:nk]</field>
+            <field>[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{42DD24E1-D3BD-435E-B2EE-20E423B00D9C}' />
+    </window>
+    <window class='worksheet' name='Speed Variation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_name:nk]' type='filter' />
+            <card param='[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_headsign:nk]' type='filter' />
+            <card param='[federated.160n9371xk22o913yen7k0l9su4f].[none:route_short_name:ok]' type='filter' />
+            <card pane-specification-id='1' param='[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.160n9371xk22o913yen7k0l9su4f].[none:Calculation_1101974539382509570:ok]</field>
+            <field>[federated.160n9371xk22o913yen7k0l9su4f].[none:route_short_name:ok]</field>
+            <field>[federated.160n9371xk22o913yen7k0l9su4f].[none:stop_name:nk]</field>
+            <field>[federated.160n9371xk22o913yen7k0l9su4f].[yr:departure_time_real:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{577040CA-BDFF-474C-A038-FA86BFACC0D7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='ROW vs Speed' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='ROW vs Speed (2)' width='192'>
+      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
+      AOJEO2ib+//5qFq6WwahbQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Speed Variation' width='192'>
+      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
+      PF2RctIAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
