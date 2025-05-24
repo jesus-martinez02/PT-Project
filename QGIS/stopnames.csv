@@ -1,0 +1,144 @@
+route_short_name,destination,stop_sequence_real,stop_name
+74,Sickla udde,1,Moa Martinsons torg
+74,Sickla udde,2,Strandbergsgatan
+74,Sickla udde,3,Lindhagensgatan
+74,Sickla udde,4,Mariebergsgatan
+74,Sickla udde,5,Västerbroplan
+74,Sickla udde,6,Högalidsgatan
+74,Sickla udde,7,Hornstull
+74,Sickla udde,8,Lignagatan
+74,Sickla udde,9,Varvsgatan
+74,Sickla udde,10,Ansgariegatan
+74,Sickla udde,11,Zinkensdamm
+74,Sickla udde,12,Rosenlundsgatan
+74,Sickla udde,13,Wollmar Yxkullsgatan
+74,Sickla udde,14,Södra station
+74,Sickla udde,16,Eriksdal
+74,Sickla udde,17,Skanstull
+74,Sickla udde,18,Bohusgatan
+74,Sickla udde,19,Mårtensdal
+74,Sickla udde,20,Luma
+74,Sickla udde,21,Sickla kaj
+74,Sickla udde,22,Sickla udde
+74,Hornsberg,1,Sickla udde
+74,Hornsberg,2,Sickla kaj
+74,Hornsberg,3,Luma
+74,Hornsberg,4,Mårtensdal
+74,Hornsberg,5,Bohusgatan
+74,Hornsberg,6,Skanstull
+74,Hornsberg,7,Eriksdal
+74,Hornsberg,8,Rosenlund
+74,Hornsberg,10,Wollmar Yxkullsgatan
+74,Hornsberg,11,Hornsgatan/Rosenlundsgatan
+74,Hornsberg,12,Zinkensdamm
+74,Hornsberg,13,Ansgariegatan
+74,Hornsberg,14,Varvsgatan
+74,Hornsberg,15,Hornstull
+74,Hornsberg,16,Högalidsgatan
+74,Hornsberg,17,Västerbroplan
+74,Hornsberg,18,Mariebergsgatan
+74,Hornsberg,19,Lindhagensgatan
+74,Hornsberg,20,Strandbergsgatan
+74,Hornsberg,21,Moa Martinsons torg
+53,Henriksdalsberget,12,Tegelbacken
+53,Henriksdalsberget,13,Riddarhustorget
+53,Henriksdalsberget,14,Mälartorget
+53,Henriksdalsberget,15,Kornhamnstorg
+53,Henriksdalsberget,16,Slussen
+53,Henriksdalsberget,17,Tjärhovsplan
+53,Henriksdalsberget,18,Ersta sjukhus
+53,Henriksdalsberget,19,Londonviadukten
+53,Henriksdalsberget,20,Danvikstull
+53,Henriksdalsberget,21,Henriksdalsviadukten
+53,Henriksdalsberget,22,Henriksdalsberget
+53,Karolinska institutet,8,Kornhamnstorg
+53,Karolinska institutet,9,Mälartorget
+53,Karolinska institutet,10,Riddarhustorget
+53,Karolinska institutet,11,Tegelbacken
+53,Karolinska institutet,12,Centralen
+53,Karolinska institutet,13,Norra Bantorget
+53,Karolinska institutet,14,Tegnérgatan
+53,Karolinska institutet,15,Sabbatsbergs sjukhus
+53,Karolinska institutet,16,Observatoriegatan
+53,Karolinska institutet,17,Odenplan
+53,Karolinska institutet,18,Hälsingegatan
+53,Karolinska institutet,19,S:t Eriksgatan
+53,Karolinska institutet,20,Vikingagatan
+53,Karolinska institutet,21,Norra Stationsgatan
+53,Karolinska institutet,22,Karolinska institutet västra
+61,Ruddammen,18,Fleminggatan
+61,Ruddammen,19,Tegnérgatan
+61,Ruddammen,20,Sabbatsbergs sjukhus
+61,Ruddammen,21,Vasaparken
+61,Ruddammen,22,Odenplan
+61,Ruddammen,23,Stadsbiblioteket
+61,Ruddammen,24,Roslagsgatan
+61,Ruddammen,25,Valhallavägen
+61,Ruddammen,26,Körsbärsvägen
+61,Ruddammen,27,Stickelbärsvägen
+61,Ruddammen,28,Ruddammsparken
+61,Ruddammen,29,Ruddammen
+61,Hornsberg,7,Stadsbiblioteket
+61,Hornsberg,8,Odenplan
+61,Hornsberg,9,Vasaparken
+61,Hornsberg,10,Sabbatsbergs sjukhus
+61,Hornsberg,11,Fleminggatan
+61,Hornsberg,12,Rådhuset
+61,Hornsberg,13,Kungsholmstorg
+61,Hornsberg,14,John Ericssonsgatan
+61,Hornsberg,15,Pontonjärparken
+61,Hornsberg,16,Fridhemsplan
+61,Hornsberg,17,Mariebergsgatan
+61,Hornsberg,18,Västerbroplan
+61,Hornsberg,19,Marieberg
+61,Hornsberg,20,Wennerbergsgatan
+61,Hornsberg,21,Viktor Rydbergs gata
+61,Hornsberg,22,Vitalisvägen
+61,Hornsberg,23,Frödingsvägen
+61,Hornsberg,24,Kristineberg
+61,Hornsberg,25,Olof Dalins väg
+61,Hornsberg,26,Nordenflychtsvägen
+61,Hornsberg,27,Moa Martinsons torg
+61,Ruddammen,1,Moa Martinsons torg
+61,Ruddammen,2,Nordenflychtsvägen
+61,Ruddammen,3,Olof Dalins väg
+61,Ruddammen,4,Kristineberg
+61,Ruddammen,5,Fredhäll
+61,Ruddammen,6,Vitalisvägen
+61,Ruddammen,7,Viktor Rydbergs gata
+61,Ruddammen,8,Wennerbergsgatan
+61,Ruddammen,9,Marieberg
+61,Ruddammen,10,Västerbroplan
+61,Ruddammen,11,Mariebergsgatan
+61,Ruddammen,12,Fridhemsplan
+61,Ruddammen,13,Pontonjärgatan
+61,Ruddammen,14,Pontonjärparken
+61,Ruddammen,15,Pilgatan
+61,Ruddammen,16,Landstingshuset
+61,Ruddammen,17,Rådhuset
+53,Henriksdalsberget,1,Karolinska institutet västra
+53,Henriksdalsberget,2,Norra Stationsgatan
+53,Henriksdalsberget,3,Vikingagatan
+53,Henriksdalsberget,4,S:t Eriksgatan
+53,Henriksdalsberget,5,Hälsingegatan
+53,Henriksdalsberget,6,Odenplan
+53,Henriksdalsberget,7,Observatoriegatan
+53,Henriksdalsberget,8,Sabbatsbergs sjukhus
+53,Henriksdalsberget,9,Tegnérgatan
+53,Henriksdalsberget,10,Norra Bantorget
+53,Henriksdalsberget,11,Centralen
+53,Karolinska institutet,1,Henriksdalsberget
+53,Karolinska institutet,2,Henriksdalsviadukten
+53,Karolinska institutet,3,Londonviadukten
+53,Karolinska institutet,4,Folkungagatan
+53,Karolinska institutet,5,Ersta sjukhus
+53,Karolinska institutet,6,Tjärhovsplan
+53,Karolinska institutet,7,Slussen
+74,Sickla udde,15,Rosenlund
+74,Hornsberg,9,Södra station
+61,Hornsberg,1,Ruddammen
+61,Hornsberg,2,Ruddammsparken
+61,Hornsberg,3,Stickelbärsvägen
+61,Hornsberg,4,Körsbärsvägen
+61,Hornsberg,5,Odengatan
+61,Hornsberg,6,Roslagsgatan
