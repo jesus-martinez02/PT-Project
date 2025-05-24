@@ -1,0 +1,8 @@
+#Ignore temporary files created by arcgis
+*.lock
+*.sr.lock
+*.freelist
+*.atx
+*.spx
+*.tbx
+*.nit
