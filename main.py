@@ -4,7 +4,7 @@ from data_acquisition import *
 day_list = ["2025-03-19","2025-03-20"]
 
 ### REPLACE WITH YOUR API KEY
-api_key = "n6pVu1SOs8uP1U7pfDRf3GLl7uPwQr_h-RwQecqNTWk"
+api_key = ""
 
 #for day in day_list:
 #    get_day(day,api_key, in_relevant_lines = ['53','61','74'])
